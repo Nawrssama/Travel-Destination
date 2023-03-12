@@ -1,21 +1,23 @@
 import React from "react";
 import '../tours/Tours.css'
-const data = require("../../data/db.json");
-function Tours(){
-    console.log(data);
-    return(
+import Tour from "./tour/Tour";
+
+
+const dataBase = require('../../data/db.json');
+
+
+function Tours() {
+    return (
+
         <div className="tours">
-            <h2>Travel list</h2>
-            {data.map((item)=>{
+            {dataBase.map((item) => {
                 return (
-                    <div key={item.ID}>
-                        <h3>{item.name}</h3>
-                        <img className="img" src={item.image} alt={item.name}></img>
-
-
+                    <div key={item.id}>
+                        <Tour tour={item} />
                     </div>
                 )
-            })}
+            })
+            }
         </div>
     )
 }

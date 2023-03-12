@@ -1,16 +1,25 @@
 import React from "react";
 import "../footer/footer.css";
 
-function Footer(){
+function Footer() {
     return (
         <div className="Footer">
-            <p> contact us on : 000000000000 </p>
+            <p> contact me : nawrsbibi.nb@gmail.com </p>
             <p>Social media:</p>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook" className="face">Facebook</i></a>
-            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram" className="inst">Instagram</i></a>
-            <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter" className="twit">twitter</i></a>
+            <ul className='buttons'>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook">Facebook</i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i className="fab fa-instagram">Instagram</i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i className="fab fa-twitter">twitter</i></a>
+                </li>
+
+            </ul>
         </div>
-        
+
     )
 }
 

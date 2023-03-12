@@ -1,16 +1,14 @@
 import React from "react";
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
+
 import Tours from "../tours/Tours";
 
-function Home(){
+function Home() {
     return (
-        <>
-        
-        <Header />
-        <Tours />
-        <Footer />
-        </>
+        <div className="home">
+
+            <Tours />
+
+        </div>
     )
 }
 export default Home;

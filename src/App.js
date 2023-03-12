@@ -1,14 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-// import footer from './components/footer/Footer';
-// import header from './components/header/Header';
 import Home from './components/home/Home';
-// import tours from './components/tours/Tours';
+import { Routes, Route } from 'react-router-dom';
+import TourDetails from './components/TourDetails/TourDetails'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
   return (
     <div className="App">
-     <Home />
+
+      <Routes>
+
+        <Route path='/' element={<Home />}></Route>
+        <Route path="/city/:id" element={<TourDetails />} />
+        
+      </Routes>
+
+
     </div>
   );
 }
