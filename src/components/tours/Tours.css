@@ -1,0 +1,13 @@
+.tours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    gap: 40px;
+    background-color: rgb(147, 249, 249);
+}
+
+.img{
+    height: 300px;
+}
